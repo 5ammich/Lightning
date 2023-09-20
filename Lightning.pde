@@ -8,8 +8,8 @@ int lightningColor2;
 double yes;
 boolean hm = true;
 boolean gameStart = false;
-int playerX = -10;
-int playerY = -10;
+int playerX = -1000;
+int playerY = -1000;
 float smol = 0.03;
 boolean lose;
 int score = 0;
@@ -27,6 +27,15 @@ void draw(){
   rect(-100,-100,1000,800);
 
   Lightning();
+
+  fill(255,0,0);
+  textSize(25);
+  text("SCORE:", 500, 50);
+  text(score, 600,50);
+  System.out.println(score);
+  fill(255,255,255);
+  noStroke();
+  Player();
 }
 void Lightning(){
   fill(211,211,211);
@@ -55,7 +64,20 @@ void Lightning(){
   }
 }
 
+
+
+
 void Player(){
+  yes = (Math.random());
+  if (hm == true){
+    if (yes < smol){
+      startX = 350;
+      startY = 0;
+      endX = 350;
+      endY = 0;
+    }
+
+  }
   if (gameStart == true){
     playerX = (int)((Math.random()*500)+50);
     playerY = 450;
@@ -104,8 +126,10 @@ public void keyPressed(){
   }
 }
 public void mousePressed(){
+
     startX = 350;
     startY = 0;
     endX = 350;
     endY = 0;
+ 
 }
