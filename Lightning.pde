@@ -27,24 +27,24 @@ void draw(){
   rect(-100,-100,1000,800);
 
   Lightning();
- // yes = (Math.random());
- // if (hm == true){
-    //if (yes < smol){
-      //startX = 350;
-      //startY = 0;
-      //endX = 350;
-      //endY = 0;
-      //System.out.println(yes);
-    //}
+  yes = (Math.random());
+  if (hm == true){
+    if (yes < smol){
+      startX = 350;
+      startY = 0;
+      endX = 350;
+      endY = 0;
+      System.out.println(yes);
+    }
 
-  //}
-  //fill(255,0,0);
-  //textSize(25);
-  //text("SCORE:", 500, 50);
-  //text(score, 600,50);
-  //System.out.println(score);
-  //fill(255,255,255);
-  //noStroke();
+  }
+  fill(255,0,0);
+  textSize(25);
+  text("SCORE:", 500, 50);
+  text(score, 600,50);
+  System.out.println(score);
+  fill(255,255,255);
+  noStroke();
   Player();
 }
 void Lightning(){
