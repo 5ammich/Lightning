@@ -19,7 +19,7 @@ void setup()
   size(700,500);
   strokeWeight(5);
   background(0,0,0);
-  frameRate(24);
+  //frameRate(5);
 
 }
 void draw(){
