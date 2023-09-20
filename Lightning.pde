@@ -74,9 +74,6 @@ void Lightning(){
   }
 }
 
-
-
-
 void Player(){
   if (gameStart == true){
     playerX = (int)((Math.random()*500)+50);
@@ -126,11 +123,8 @@ public void keyPressed(){
   }
 }
 public void mousePressed(){
-
     startX = 350;
     startY = 0;
     endX = 350;
     endY = 0;
- 
 }
-
