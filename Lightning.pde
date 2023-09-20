@@ -34,7 +34,6 @@ void draw(){
       startY = 0;
       endX = 350;
       endY = 0;
-      System.out.println(yes);
     }
 
   }
@@ -42,7 +41,6 @@ void draw(){
   textSize(25);
   text("SCORE:", 500, 50);
   text(score, 600,50);
-  System.out.println(score);
   fill(255,255,255);
   noStroke();
   Player();
@@ -95,7 +93,6 @@ void Player(){
   if ((endX > playerX - 15) && (endX < playerX + 15) && (endY > 450)){
     lose = true;
     playerX = -1000;
-    System.out.println(lose);
     fill(255,255,255);
     textSize(50);
     text("YOU LOSE", 20, 50);
@@ -111,7 +108,6 @@ public void keyPressed(){
   }
   if (key == 'j' || key == 'J'){
     gameStart = true;
-    System.out.println(gameStart);
     lose = false;
     score = 0;
   }
