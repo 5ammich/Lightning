@@ -35,7 +35,9 @@ void draw(){
       endX = 350;
       endY = 0;
     }
-
+  if (endY > 470){
+    endX = -1000;
+}
   }
   fill(255,0,0);
   textSize(25);
