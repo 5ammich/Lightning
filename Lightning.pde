@@ -89,7 +89,7 @@ void Player(){
     playerX = 0;
   }
   }
-  if ((endX > playerX) && (endX < playerX + 30) && (endY > playerY) && (endY < 480)){
+  if ((endX > playerX) && (endX < playerX + 30) && (endY > playerY)){
     lose = true;
     playerX = -1000;
     fill(255,255,255);
