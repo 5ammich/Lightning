@@ -36,10 +36,8 @@ void draw(){
       endY = 0;
     }
   if (endY > 500){
-    startX = -1000;
-    endX = -1000;
-    startY = -1000;
-    endY = -1000;
+    startY = 0;
+    endY = 0;
 }
   }
   fill(255,0,0);
